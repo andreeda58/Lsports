@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using Logging;
+using Models;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,8 @@ namespace TestingSeleniumLsports.TestCase
                 ;
 
              Assert.That(covidText, Does.Contain("COVID-19"));
+
+            Logger.Instance.Add("Corona Info Test Success");
             Thread.Sleep(7000);
         }
     }

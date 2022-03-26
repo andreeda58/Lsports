@@ -66,6 +66,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Logging\Logging.csproj">
+      <Project>{E34201D2-2B0C-4163-8C2E-6F5174DC9848}</Project>
+      <Name>Logging</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{E66DA5E4-6649-4ABB-B4BF-FDDC113F79DC}</Project>
       <Name>Models</Name>

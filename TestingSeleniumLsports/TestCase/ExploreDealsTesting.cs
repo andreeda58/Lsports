@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using Logging;
+using Models;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,8 @@ namespace TestingSeleniumLsports.TestCase
                 .ReviewScoreClick();
 
             Assert.IsTrue(isQualityHotels);
+
+            Logger.Instance.Add("well rated hotels test success");
             Thread.Sleep(10000);
 
         }

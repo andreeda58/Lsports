@@ -20,11 +20,10 @@ namespace Models
         { get => _driver.FindElement(By.CssSelector("button.sb-searchbox__button")); }
 
         protected IWebElement _reviewScoreHotel
-        { get => _driver.FindElement(By.XPath("//*[@id='searchboxInc']/div[1]/div/div/div[1]/div[18]/div[3]/label/div/div/div[1]/div")); }
+        { get => _driver.FindElement(By.CssSelector("div[data-filters-group='review_score']"))
+                .FindElement(By.CssSelector("div[data-filters-item='review_score:review_score=80']")); }
 
         public ExploreDealsPage(IWebDriver driver) => _driver = driver;
-
-
       
         public ExploreDealsPage InputDestination(string dest)
         {
@@ -100,7 +99,7 @@ namespace Models
             catch (NoSuchElementException ex)
             {
                 new WebDriverWait(_driver, TimeSpan.FromSeconds(10))
-                    .Until(drv => drv.FindElement(By.XPath("//*[@id='searchboxInc']/div[1]/div/div/div[1]/div[18]/div[3]/label/div/div/div[1]/div")));
+                    .Until(drv => drv.FindElement(By.CssSelector("div[data-filters-item='review_score:review_score=80']")));
                 Logger.Instance.Add(ex.Message);
             }
 
@@ -123,8 +122,5 @@ namespace Models
            
             return false;
         }
-
-
-
     }
 }

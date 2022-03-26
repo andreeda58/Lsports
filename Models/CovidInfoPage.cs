@@ -63,7 +63,6 @@ namespace Models
 
         public CovidInfoPage GoToCorrectFrame()
         {
-           
             try
             {
                 var tabs = _driver.WindowHandles;
@@ -458,6 +457,7 @@ namespace Models
                 throw;
             }
 
+            Logger.Instance.Add(text);
             return text;
         }
     }
