@@ -1,0 +1,13 @@
+C:\Users\97253\Desktop\LSportsFinal\TestingSelenium\Models\bin\Debug\Models.dll
+C:\Users\97253\Desktop\LSportsFinal\TestingSelenium\Models\bin\Debug\Models.pdb
+C:\Users\97253\Desktop\LSportsFinal\TestingSelenium\Models\bin\Debug\Logging.dll
+C:\Users\97253\Desktop\LSportsFinal\TestingSelenium\Models\bin\Debug\SeleniumExtras.PageObjects.dll
+C:\Users\97253\Desktop\LSportsFinal\TestingSelenium\Models\bin\Debug\SeleniumExtras.WaitHelpers.dll
+C:\Users\97253\Desktop\LSportsFinal\TestingSelenium\Models\bin\Debug\WebDriver.dll
+C:\Users\97253\Desktop\LSportsFinal\TestingSelenium\Models\bin\Debug\WebDriver.Support.dll
+C:\Users\97253\Desktop\LSportsFinal\TestingSelenium\Models\bin\Debug\Logging.pdb
+C:\Users\97253\Desktop\LSportsFinal\TestingSelenium\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\97253\Desktop\LSportsFinal\TestingSelenium\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\97253\Desktop\LSportsFinal\TestingSelenium\Models\obj\Debug\Models.csproj.CopyComplete
+C:\Users\97253\Desktop\LSportsFinal\TestingSelenium\Models\obj\Debug\Models.dll
+C:\Users\97253\Desktop\LSportsFinal\TestingSelenium\Models\obj\Debug\Models.pdb
