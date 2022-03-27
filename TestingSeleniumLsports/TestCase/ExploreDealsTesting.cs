@@ -13,13 +13,13 @@ namespace TestingSeleniumLsports.TestCase
     [TestFixture]
     class ExploreDealsTesting:BaseTest
     {
-        [Test]
-        public void ExploreDealsClickedTest()
+        [TestCase("Eilat")]
+        public void ExploreDealsClickedTest(string destination)
         {
             BookingHomePage bookingHomePage = new BookingHomePage(_driver);
 
            var isQualityHotels= bookingHomePage.GoToExploreDealsPage()
-                .InputDestination("Eilat")
+                .InputDestination(destination)
                 .ExecuteDestinationSearch()
                 .ReviewScoreClick();
 

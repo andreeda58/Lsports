@@ -12,8 +12,8 @@ namespace TestingSeleniumLsports.TestCase
 {
     class CovidInfoTesting:BaseTest
     {
-        [Test]
-        public void LearnMoreClickedTest()
+        [TestCase("Israel", "Israel", "Paris")]
+        public void LearnMoreClickedTest(string passport, string departure,string destination)
         {
             BookingHomePage bookingHomePage = new BookingHomePage(_driver);
 
@@ -21,13 +21,13 @@ namespace TestingSeleniumLsports.TestCase
                 .GoToCovidInfo()
                 .GoToCorrectFrame()
                 .ClickPassportBox()
-                .TypeInputPassport("Israel")
+                .TypeInputPassport(passport)
                 .SelectFromListBoxPassport()
                 .ClickDepartureBox()
-                .InputDeparture("Israel")
+                .InputDeparture(departure)
                 .SelectFromListBoxDeparture()
                 .ClickDestinationBox()
-                .InputDestination("Paris")
+                .InputDestination(destination)
                 .SelectFromListBoxDestination()
                 .SelectVacunationFilter()
                 .GetText()

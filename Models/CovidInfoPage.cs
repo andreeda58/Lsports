@@ -59,7 +59,11 @@ namespace Models
                   .FindElement(By.CssSelector("h2[class='mat-subheading-1']"));
         }
 
-        public CovidInfoPage(IWebDriver driver) => _driver = driver;
+        public CovidInfoPage(IWebDriver driver) 
+        { 
+            _driver = driver;
+            Logger.Instance.Add("You enter to CovidInfoPage");
+        }
 
         public CovidInfoPage GoToCorrectFrame()
         {

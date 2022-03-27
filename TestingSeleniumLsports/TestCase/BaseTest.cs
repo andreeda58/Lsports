@@ -20,7 +20,7 @@ namespace TestingSeleniumLsports.TestCase
         {
             _driver = new ChromeDriver();
             _driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(10);
-            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
             _driver.Navigate().GoToUrl(Url);
         }
 

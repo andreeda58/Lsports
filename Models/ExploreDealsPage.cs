@@ -23,7 +23,11 @@ namespace Models
         { get => _driver.FindElement(By.CssSelector("div[data-filters-group='review_score']"))
                 .FindElement(By.CssSelector("div[data-filters-item='review_score:review_score=80']")); }
 
-        public ExploreDealsPage(IWebDriver driver) => _driver = driver;
+        public ExploreDealsPage(IWebDriver driver)
+        {
+            _driver = driver;
+            Logger.Instance.Add("You enter to ExploreDealsPage");
+        }
       
         public ExploreDealsPage InputDestination(string dest)
         {
